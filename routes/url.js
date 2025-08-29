@@ -29,7 +29,7 @@ router.post('/short', async function(req, res){
         })
 
     } catch(error){
-        res.status(400).json({
+        res.status(500).json({
             error: `Error in generating url: ${error}`
         })
     }
